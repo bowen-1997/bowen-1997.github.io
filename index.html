@@ -7,23 +7,32 @@
       name="description"
       content="邬博文，华中科技大学人工智能专业博士研究生，研究方向为群体智能、优化决策、无人机集群任务分配与大语言模型辅助算法设计。"
     />
-    <title>邬博文 - Homepage</title>
+    <title>Bowen Wu - Homepage</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="page">
       <header class="profile" id="top">
-        <div class="avatar" aria-label="邬博文头像占位">BW</div>
+        <img class="avatar" src="profile.jpg" alt="Bowen Wu portrait" />
         <div>
-          <h1>邬博文</h1>
-          <p>博士研究生，人工智能专业</p>
-          <p>华中科技大学</p>
+          <h1>Bowen Wu（邬博文）</h1>
+          <p>Ph.D. Candidate, Artificial Intelligence</p>
+          <p>Huazhong University of Science and Technology, School of Artificial Intelligence and Automation</p>
+          <p>华中科技大学，人工智能与自动化学院</p>
           <p>Email: <a href="mailto:bwwu@hust.edu.cn">bwwu@hust.edu.cn</a></p>
         </div>
       </header>
 
       <section>
-        <h2>个人简介</h2>
+        <h2>Biography</h2>
+        <p>
+          I am a Ph.D. candidate in Artificial Intelligence at Huazhong University of Science and Technology.
+          My research focuses on swarm intelligence, optimization decision-making, UAV swarm task allocation,
+          and LLM-assisted automatic algorithm design. I am particularly interested in modeling collective
+          coordination mechanisms in complex dynamic environments and developing adaptive optimization methods
+          inspired by biological division of labor and large language models.
+        </p>
+        <h3>中文简介</h3>
         <p>
           我是华中科技大学人工智能专业博士研究生，研究方向包括群体智能、优化决策、无人机集群任务分配和大语言模型辅助算法设计。
           当前工作关注复杂动态环境中的无人集群协同决策，以及利用自然界分工协作机制和大语言模型提升优化算法的自动生成与自适应能力。
@@ -32,7 +41,7 @@
 
       <nav class="toc" aria-label="页面目录">
         <a href="#research">[Research Interests]</a>
-        <a href="#projects">[Projects & Awards]</a>
+        <a href="#projects">[研究项目]</a>
         <a href="#publications">[Publications]</a>
         <a href="#education">[Education]</a>
         <a href="#contact">[Contact]</a>
@@ -40,15 +49,14 @@
 
       <section id="research">
         <h2>Research Interests</h2>
-        <blockquote>
-          <ul>
-            <li>Swarm intelligence and bio-inspired optimization</li>
-            <li>UAV swarm task allocation under dynamic and coupled missions</li>
-            <li>LLM-assisted automatic algorithm design and evolution</li>
-            <li>Robust scheduling and multi-objective decision optimization</li>
-          </ul>
-        </blockquote>
+        <ul class="interests">
+          <li>Swarm intelligence and bio-inspired optimization</li>
+          <li>UAV swarm task allocation under dynamic and coupled missions</li>
+          <li>LLM-assisted automatic algorithm design and evolution</li>
+          <li>Robust scheduling and multi-objective decision optimization</li>
+        </ul>
 
+        <h3>研究兴趣</h3>
         <h3>复杂任务驱动的无人机群体智能</h3>
         <p>
           面向无人机集群在动态环境中的协同任务分配问题，研究混合整数线性规划建模、多类型任务耦合、环境随机变化、平台功能异构和突发因素下的分布式优化方法。
@@ -69,74 +77,58 @@
       </section>
 
       <section id="projects">
-        <h2>Projects & Awards</h2>
-        <ul>
-          <li>
-            参与科技创新 2030 “新一代人工智能”重大项目《群体智能涌现机理与演化方法》。
-          </li>
-          <li>
-            面向无人机集群任务分配场景，构建模块化场景实例生成器与分布式异构任务分配算法，实验中最高减少约 88% 的无人集群运行成本。
-          </li>
-          <li>
-            面向复杂装备设计项目进度鲁棒计划优化，结合工作分解、随机网络、里程碑节点与设计师资源约束，实现工期、成本和质量价值的协同优化。
-          </li>
-          <li>
-            中国控制与决策会议论文获最佳人气奖第 1 名。
-          </li>
-          <li>
-            本科期间担任校学生会主席，主持暑期“三下乡”活动，获全国社会实践优秀团队、江西省先进个人。
-          </li>
-        </ul>
+        <h2>研究项目</h2>
+        <h3>科技创新 2030 “新一代人工智能”重大项目《群体智能涌现机理与演化方法》</h3>
+        <p>
+          该项目面向国家新一代人工智能发展战略，围绕城市感知等复杂开放场景中的群智涌现问题，研究可解释、可度量的群体智能认知计算理论与演化方法。
+          项目从知识表示学习、非平衡多态临界相变和演化博弈等角度揭示个体感知与交互如何汇聚为群体智能，并探索多层次、多尺度时空耦合的智能演化规律，
+          为群体智能基础理论、城市智能感知和未来自主协同系统提供方法支撑。
+        </p>
       </section>
 
       <section id="publications">
         <h2>Selected Publications</h2>
 
-        <h3>Journal Papers</h3>
         <ol class="pubs">
           <li>
             <strong>Wu B</strong>, Xiao R. Evolutionary attraction-repulsion algorithm embedded with LLM for UAV task allocation.
-            <em>Advanced Engineering Informatics</em>, 2025, 66: 103428.
-            <span>中科院 1 区 TOP, JCR 1 区, IF=9.9</span>
+            <em>Advanced Engineering Informatics</em>, 2025, 66: 103428
+            <span class="note">(中科院 1 区 TOP, JCR 1 区, IF=9.9)</span>.
           </li>
           <li>
             <strong>Wu B</strong>, Xiao R. Attention-embedded lion pride labor division algorithm for solving dynamic coupling SEAD task allocation problem.
-            <em>IEEE Transactions on Aerospace and Electronic Systems</em>, 2025, 61(5): 11187-11207.
-            <span>中科院 2 区 TOP, JCR 1 区, IF=5.1</span>
+            <em>IEEE Transactions on Aerospace and Electronic Systems</em>, 2025, 61(5): 11187-11207
+            <span class="note">(中科院 2 区 TOP, JCR 1 区, IF=5.1)</span>.
           </li>
           <li>
             <strong>Wu B</strong>, et al. Giza pyramids construction algorithm with gradient contour approach for multilevel thresholding color image segmentation.
-            <em>Applied Intelligence</em>, 2023, 53: 21248-21267.
-            <span>中科院 2 区, JCR 2 区, CCF C 类</span>
+            <em>Applied Intelligence</em>, 2023, 53: 21248-21267
+            <span class="note">(中科院 2 区, JCR 2 区, CCF C 类)</span>.
           </li>
           <li>
             <strong>Wu B</strong>, Xiao R. Emergence mechanism of lion pride cooperative behaviours for task allocation problem and its implementation.
-            <em>International Journal of Bio-Inspired Computation</em>, 2024, 24(4): 252-264.
-            <span>中科院 3 区, JCR 2 区, 中国自动化学会 A 类</span>
+            <em>International Journal of Bio-Inspired Computation</em>, 2024, 24(4): 252-264
+            <span class="note">(中科院 3 区, JCR 2 区, 中国自动化学会 A 类)</span>.
           </li>
           <li>
             <strong>Wu B</strong>, et al. A hybrid preaching optimization algorithm based on Kapur entropy for multilevel thresholding color image segmentation.
-            <em>Entropy</em>, 2021, 23(12): 1599.
-            <span>中科院 3 区, JCR 2 区</span>
+            <em>Entropy</em>, 2021, 23(12): 1599
+            <span class="note">(中科院 3 区, JCR 2 区)</span>.
           </li>
           <li>
             <strong>Wu B</strong>, Xiao R. Whale optimization algorithm with role labor division for multimodal optimization.
-            <em>International Journal of Innovative Computing and Applications</em>, 2024: 26-37.
-            <span>EI</span>
+            <em>International Journal of Innovative Computing and Applications</em>, 2024: 26-37
+            <span class="note">(EI)</span>.
           </li>
           <li>
             肖人彬, <strong>邬博文</strong>, 等. 群体智能视角下的高等生物仿生计算: 问题分析与综合评述.
-            <em>复杂系统与复杂性科学</em>, 2025, 22: 1-10.
-            <span>特约稿</span>
+            <em>复杂系统与复杂性科学</em>, 2025, 22: 1-10
+            <span class="note">(特约稿)</span>.
           </li>
-        </ol>
-
-        <h3>Conference Papers</h3>
-        <ol class="pubs">
           <li>
             <strong>Wu B</strong>, Xiao R. The lion pride role division model for solving task allocation problem of UAV swarm under unexpected conditions.
-            中国控制与决策会议, 2023.
-            <span>EI, 最佳人气奖第 1 名</span>
+            中国控制与决策会议, 2023
+            <span class="note">(EI, 最佳人气奖第 1 名)</span>.
           </li>
         </ol>
       </section>
@@ -144,17 +136,17 @@
       <section id="education">
         <h2>Education</h2>
         <ul>
-          <li>2022.09 - 2026.06, 华中科技大学，博士研究生，人工智能专业。</li>
-          <li>2020.09 - 2022.06, 东北林业大学，硕士，机械专业，控制工程方向。</li>
-          <li>2016.09 - 2020.07, 东华理工大学，学士，测控技术与仪器专业。</li>
+          <li>2022.09 - 2026.06, Ph.D. Candidate in Artificial Intelligence, Huazhong University of Science and Technology.</li>
+          <li>2020.09 - 2022.06, M.S. in Mechanical Engineering, Control Engineering Track, Northeast Forestry University.</li>
+          <li>2016.09 - 2020.07, B.Eng. in Measurement and Control Technology and Instrumentation, East China University of Technology.</li>
         </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <p>
-          欢迎交流群体智能、无人集群任务分配、优化决策与算法自动设计相关问题。
-          Email: <a href="mailto:bwwu@hust.edu.cn">bwwu@hust.edu.cn</a>
+          I welcome discussions on swarm intelligence, UAV swarm task allocation, optimization decision-making,
+          and automatic algorithm design. Email: <a href="mailto:bwwu@hust.edu.cn">bwwu@hust.edu.cn</a>
         </p>
       </section>
 
