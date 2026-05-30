@@ -4,7 +4,7 @@
   --link: #0645ad;
   --note: #1b63b7;
   --line: #ddd;
-  font-family: Georgia, "Times New Roman", "Noto Serif SC", "黑体", SimSun, serif;
+  font-family: Georgia, "Times New Roman", SimHei, "黑体", "Heiti SC", Arial, sans-serif;
 }
 
 * {
@@ -40,7 +40,7 @@ a:focus-visible {
 
 .profile {
   display: grid;
-  grid-template-columns: 132px 1fr;
+  grid-template-columns: 132px 1fr 118px;
   gap: 26px;
   align-items: start;
   margin-bottom: 24px;
@@ -52,6 +52,13 @@ a:focus-visible {
   border: 1px solid var(--line);
   object-fit: cover;
   object-position: center top;
+}
+
+.school-logo {
+  justify-self: end;
+  width: 108px;
+  height: auto;
+  margin-top: 2px;
 }
 
 h1 {
@@ -137,13 +144,19 @@ footer {
   }
 
   .profile {
-    grid-template-columns: 1fr;
+    grid-template-columns: 96px 1fr;
     gap: 14px;
   }
 
   .avatar {
     width: 96px;
     height: 120px;
+  }
+
+  .school-logo {
+    grid-column: 1 / -1;
+    justify-self: start;
+    width: 86px;
   }
 
   h1 {
