@@ -42,7 +42,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 132px 1fr 118px;
   gap: 26px;
-  align-items: start;
+  align-items: center; /* 修改为center实现垂直居中 */
   margin-bottom: 24px;
 }
 
@@ -56,9 +56,9 @@ a:focus-visible {
 
 .school-logo {
   justify-self: end;
-  width: 25px;
+  width: 80px; /* 减小校徽宽度 */
   height: auto;
-  margin-top: 2px;
+  margin-top: 0; /* 移除margin-top，因为现在垂直居中了 */
 }
 
 h1 {
@@ -124,6 +124,10 @@ li {
 
 em {
   font-style: italic;
+}
+
+.justify-text {
+  text-align: justify; /* 为英文研究项目文本添加两端对齐 */
 }
 
 footer {
